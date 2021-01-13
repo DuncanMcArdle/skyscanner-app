@@ -1,0 +1,55 @@
+@import '~bpk-mixins';
+
+.flight-leg {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1em;
+  flex-direction: row;
+
+  &__carrier-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__point {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__airport {
+    color: $bpk-color-sky-gray-tint-02;
+  }
+
+  &__details {
+    margin-right: 1rem;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  &__duration {
+    color: $bpk-color-sky-gray-tint-02;
+    font-size: $bpk-font-size-sm;
+  }
+}
+
+/*
+
+DISABLED DUE TO unit-blacklist PREVENTING USE OF px - Push flight duration and number of stops to next line
+
+@media screen and (max-width: 300px) {
+  .flight-leg {
+    flex-wrap: wrap;
+    &__details {
+      display: flex;
+      margin: 0;
+      flex-direction: row;
+    }
+    &__duration {
+      margin-right: 1rem;
+    }
+  }
+}
+
+*/
