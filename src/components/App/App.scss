@@ -1,7 +1,11 @@
 @import '~bpk-mixins';
 
-.App {
-  &__main {
-    padding: $bpk-spacing-sm;
+.app {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $bpk-color-sky-gray-tint-07;
+
+  &__itineraries {
+    padding: 0.5rem 1rem;
   }
 }
