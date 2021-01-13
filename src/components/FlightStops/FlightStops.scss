@@ -1,0 +1,13 @@
+@import '~bpk-mixins';
+
+.flight-stops {
+  &__direct {
+    color: $bpk-color-system-green;
+    font-size: $bpk-font-size-sm;
+  }
+
+  &__indirect {
+    color: $bpk-color-system-red;
+    font-size: $bpk-font-size-sm;
+  }
+}
